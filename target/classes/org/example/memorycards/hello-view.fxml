@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FDE9C6;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.memorycards.HelloController">
+
+    <children>
+        <!-- Заголовок -->
+        <Label fx:id="titleLabel" layoutX="183.0" layoutY="6.0" style="-fx-font-size: 24; -fx-font-weight: bold;" text="Memory Cards Game" textAlignment="CENTER" />
+
+        <!-- Статус игры -->
+        <Label fx:id="statusLabel" layoutX="229.0" layoutY="60.0" style="-fx-font-size: 16;" text="Find matching pairs!" textAlignment="CENTER" />
+
+        <!-- Кнопка новой игры -->
+        <Button fx:id="newGameButton" layoutX="513.0" layoutY="97.0" mnemonicParsing="false" onAction="#handleNewGame" text="New Game" />
+
+        <!-- Первый ряд карточек -->
+        <HBox fx:id="row1" alignment="CENTER" layoutX="50.0" layoutY="141.0" prefHeight="80.0" prefWidth="500.0" spacing="20">
+            <children>
+                <Button fx:id="card1" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+                <Button fx:id="card2" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+                <Button fx:id="card3" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+                <Button fx:id="card4" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+            <Button fx:id="card11" layoutX="90.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="card21" layoutX="135.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            </children>
+        </HBox>
+
+        <!-- Второй ряд карточек -->
+        <HBox fx:id="row2" alignment="CENTER" layoutX="50.0" layoutY="238.0" prefHeight="80.0" prefWidth="500.0" spacing="20">
+            <children>
+                <Button fx:id="card5" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+                <Button fx:id="card6" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+                <Button fx:id="card7" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+                <Button fx:id="card8" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+                    <font><Font size="29.0" /></font>
+                </Button>
+            <Button fx:id="card51" layoutX="90.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="card61" layoutX="135.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleCardClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #F9BF58;" text="?" textAlignment="CENTER" textFill="#ab2424">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
